@@ -27,11 +27,14 @@ int main(void)
 	 
 	LCD_Init();
 	POINT_COLOR = RED;
-	sprintf((char*)lcd_id,"LCD ID:%04X",lcddev.id);//将LCD ID打印到lcd_id数组。		
-	 
+	sprintf((char*)lcd_id,"LCD ID:%04X",lcddev.id);//将LCD ID打印到lcd_id数组。	
+
+	LCD_drawPicture();
+
   while(1) 
 	{		 
 		
+		/*
 		// 改变背景
 		switch(x)
 		{
@@ -62,6 +65,7 @@ int main(void)
 		
 		LED0=!LED0;				   		 
 		delay_ms(1000);	
+		*/
 
 	} 
 }
